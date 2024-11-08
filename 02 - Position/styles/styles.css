@@ -1,0 +1,28 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: antiquewhite;
+}
+
+.static {
+  width: 100px;
+  height: 100px;
+  background-color: lightblue;
+  position: static; /* Padrão, poderia ser omitido */
+
+  top: 20px;
+}
+
+.sticky {
+  width: 100px;
+  height: 100px;
+  background-color: lightblue;
+  position: sticky; /* Padrão, poderia ser omitido */
+
+  top: 20px;
+}
