@@ -1,0 +1,67 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100vh;
+  background-color: bisque;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  overflow: hidden;
+
+  gap: 20px;
+}
+
+.card {
+  width: 300px;
+  height: 400px;
+  border-radius: 20px;
+  box-shadow: 1px 1px 10px #000;
+  transition: opacity 0.7s ease, transform 0.5s ease-out;
+}
+
+.card:nth-child(1) {
+  background: url("../images/wallpaper1.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+}
+
+.card:nth-child(2) {
+  background: url("../images/wallpaper2.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+}
+
+.card:nth-child(3) {
+  background: url("../images/wallpaper3.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+}
+
+.card:hover {
+  opacity: 1;
+  transform: scale(1.2) rotate(320deg);
+}
+
+/* .card:hover:nth-child(1) {
+  transform: rotate(25deg);
+}
+
+.card:hover:nth-child(2) {
+  transform: scale(1.2) rotate(40deg);
+}
+
+.card:hover:nth-child(3) {
+  transform: translate(20px, 50px);
+} */
