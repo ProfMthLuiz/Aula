@@ -8,6 +8,8 @@
 
 body {
   background-color: #000;
+  min-height: 100vh;
+  padding: 10px;
 
   display: flex;
   justify-content: center;
@@ -15,7 +17,7 @@ body {
 }
 
 .hexagon_gallery {
-  width: 80%;
+  width: 85%;
   padding: 20px 40px;
 
   position: relative;
@@ -135,6 +137,42 @@ body {
   }
 
   .hexagon_gallery .hexagon:nth-child(1) {
-    padding: 10px;
+    transition: none;
+    transform: rotate(180deg);
+  }
+
+  .hexagon_gallery .hexagon:nth-child(1) .hex:nth-child(1),
+  .hexagon_gallery .hexagon:nth-child(1) .hex:nth-child(2),
+  .hexagon_gallery .hexagon:nth-child(1) .hex:nth-child(3) {
+    transform: rotate(180deg);
+  }
+}
+
+@media (max-width: 715px) {
+  body {
+    background-color: red;
+  }
+
+  .hexagon_gallery {
+    width: 80%;
+  }
+
+  .hexagon_gallery .hexagon:nth-child(2) {
+    margin-top: -5px;
+  }
+
+  .hexagon_gallery .hexagon:nth-child(3) {
+    margin-top: -5px;
+  }
+
+  .hexagon_gallery .hexagon:nth-child(1) {
+    transition: none;
+    transform: rotate(180deg);
+  }
+
+  .hexagon_gallery .hexagon:nth-child(1) .hex:nth-child(1),
+  .hexagon_gallery .hexagon:nth-child(1) .hex:nth-child(2),
+  .hexagon_gallery .hexagon:nth-child(1) .hex:nth-child(3) {
+    transform: rotate(180deg);
   }
 }
