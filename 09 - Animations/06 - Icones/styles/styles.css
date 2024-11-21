@@ -18,7 +18,7 @@
   text-align: center;
   background-color: #f1f1f1;
   border-radius: 30px;
-  box-shadow: 0 5px 15px #00000023;
+  box-shadow: 0 5px 15px #000000;
   overflow: hidden;
   position: relative;
   color: #000;
@@ -47,9 +47,7 @@
 }
 
 .media a:hover::before {
-  top: -10%;
-  left: -10%;
-  animation: animateIconsMedia 0.7s 1;
+  animation: animateIconsMedia 0.7s 1 forwards;
 }
 
 @keyframes animateIconsMedia {

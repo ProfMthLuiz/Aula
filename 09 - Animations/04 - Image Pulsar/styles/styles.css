@@ -19,16 +19,16 @@ body {
 }
 
 .imagem {
-  width: 150px; /* Ajuste o tamanho da imagem conforme necessário */
-  animation: pulsar 1.5s ease-in-out infinite; /* Animação pulsante */
+  width: 150px;
+  animation: pulsar 1.5s ease-in-out infinite;
 }
 
 @keyframes pulsar {
   0%,
   100% {
-    transform: scale(1); /* Tamanho original */
+    transform: scale(1);
   }
   50% {
-    transform: scale(1.2); /* Tamanho aumentado */
+    transform: scale(1.2);
   }
 }
